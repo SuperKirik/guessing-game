@@ -14,12 +14,12 @@ class GuessingGame {
         if (this.isLower !== null) {
 
             if (this.isLower === true) {
-                this.lowEdge = this.value + 1;
+                this.lowEdge = this.value;
             } else {
                 this.highEdge = this.value;
             }
         }
-        this.value = Math.floor((this.highEdge + this.lowEdge) * 0.5);
+        this.value = Math.round((this.highEdge + this.lowEdge) * 0.5);
         return this.value;
     }
 
